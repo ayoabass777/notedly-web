@@ -55,7 +55,7 @@ const TOGGLE_FAVORITE = gql`
 
 const SIGNIN_USER = gql`
   mutation signIn($email: String, $password: String!) {
-    signIn(email: $email, password: $password)
+    signIn(username: " ", email: $email, password: $password)
   }
 `;
 
