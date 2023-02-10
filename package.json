@@ -1,0 +1,58 @@
+{
+  "name": "notedly-web",
+  "version": "1.0.0",
+  
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "deploy:src": "parcel build src/index.html --public-url ./",
+    "deploy:final": "parcel build final/index.html --public-url ./",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoabass777/notedly-web.git",
+  "keywords": [],
+  "author": "Ayomide Abass",
+  "license": "MIT"
+  },
+
+  "dependencies": {
+    "@apollo/client": "3.0.0-beta.24",
+    "@parcel/transformer-babel": "^2.8.3",
+    "@types/react": "16.9.17",
+    "apollo-link-context": "1.0.19",
+    "date-fns": "1.30.1",
+    "graphql": "14.5.8",
+    "normalize.css": "8.0.1",
+    "package.json": "^2.0.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-markdown": "4.2.2",
+    "react-router-dom": "5.1.2",
+    "styled-components": "4.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "7.14.5",
+    "@testing-library/cypress": "5.0.2",
+    "babel-plugin-styled-components": "1.10.6",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "cypress": "3.6.1",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "5.1.0",
+    "eslint-plugin-cypress": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "graphql-request": "^1.8.2",
+    "parcel": "^2.0.0-rc.0",
+    "path-browserify": "^1.0.1",
+    "prettier": "1.19.1",
+    "process": "^0.11.10",
+    "test-data-bot": "0.8.0"
+  }
+}
